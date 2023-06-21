@@ -8,6 +8,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", async (req: Request, res: Response) => {
+  console.log('Request recieved')
   return res.status(200).send({
     message: "This works"
   });
