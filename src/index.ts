@@ -30,9 +30,10 @@ app.post("/webhook", async (req: Request, res: Response) => {
       data: req.body,
       error: null
     })
-  } catch (error) {
+  } catch (error: any) {
+    console.log({ error });
     return res.status(400).send({
-      message: 'Error saving event',
+      message: error.message,
       data: req.body,
       error
     })
