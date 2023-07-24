@@ -1,0 +1,48 @@
+{
+  "id": "0123456789012338-anc_et",
+  "type": "payment.settled",
+  "attributes": {
+    "createdAt": "2023-06-23T15:01:58",
+    "payment": {
+      "paymentId": "00000001-anc_py",
+      "type": "BankTransfer",
+      "paymentReference": "null",
+      "currency": "NGN",
+      "amount": 5000,
+      "fee": 0,
+      "createdAt": "2023-02-03T08:57:59",
+      "paidAt": "2023-02-03T08:57:59",
+      "narration": "FROM FBN/ JOHN DOE JAMES/000016230203075908000012298000",
+      "counterParty": {
+        "accountNumber": "9123456789",
+        "accountName": "JOHN DOE JAMES",
+        "bank": {
+          "name": "FIRST BANK OF NIGERIA"
+        }
+      },
+      "virtualNuban": {
+        "accountNumber": "9012345678",
+        "accountId": "1664366123456789-anc_va",
+        "accountName": "ANC(JANE DOE )"
+      },
+      "settlementAccount": {
+        "accountId": "1664366123456789-anc_acc",
+        "accountName": null,
+        "accountNumber": null,
+        "currency": null,
+        "type": null,
+        "status": null,
+        "bank": null,
+        "customer": null,
+        "createdAt": null,
+        "metadata": null,
+        "bankName": null,
+        "virtualNubans": null,
+        "frozen": false,
+        "freezeReason": null,
+        "freezeDescription": null,
+        "subAccounts": null
+      }
+    }
+  }
+}

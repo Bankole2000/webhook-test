@@ -1,0 +1,86 @@
+{
+  "data": {
+    "id": "string",
+    "type": "Payment",
+    "attributes": {
+      "counterParty": {
+        "id": "string",
+        "type": "string",
+        "metadata": {
+          "additionalProp": "string"
+        },
+        "createdAt": "2023-06-30T02:53:34.260Z",
+        "accountNumber": "1111111111",
+        "accountName": "Olaolu Adejide",
+        "bank": {
+          "id": "16534894186638-anc_bk",
+          "name": "ACCESS BANK",
+          "cbnCode": "string",
+          "nipCode": "000014"
+        }
+      },
+      "type": "string",
+      "reference": "string",
+      "paymentReference": "string",
+      "currency": "NGN",
+      "amount": 0,
+      "fee": 0,
+      "createdAt": "2023-06-30T02:53:34.260Z",
+      "paidAt": "2023-06-30T02:53:34.260Z",
+      "narration": "string",
+      "metadata": [
+        "string"
+      ]
+    },
+    "relationships": {
+      "settlementAccount": {
+        "data": {
+          "id": "012345678901234-anc_acc",
+          "type": "DepositAccount"
+        }
+      },
+      "subAccount": {
+        "data": {
+          "id": "string",
+          "type": "SubAccount"
+        }
+      },
+      "customer": {
+        "data": {
+          "id": "16565906809790-anc_ind_cst",
+          "type": "IndividualCustomerNG"
+        }
+      },
+      "virtualNuban": {
+        "data": {
+          "id": "0012345678901230-anc_va",
+          "type": "VirtualNuban"
+        }
+      },
+      "virtualNubans": {
+        "data": [
+          {
+            "id": "0012345678901230-anc_va",
+            "type": "VirtualNuban"
+          }
+        ]
+      },
+      "subAccounts": {
+        "data": [
+          {
+            "id": "string",
+            "type": "SubAccount"
+          }
+        ]
+      },
+      "settlements": {
+        "data": [
+          {
+            "id": "string",
+            "type": "PaymentSettlement"
+          }
+        ]
+      }
+    }
+  }
+}

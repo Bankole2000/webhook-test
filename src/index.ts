@@ -1,4 +1,5 @@
 import express from 'express';
+import { Types } from 'mongoose';
 import cors from 'cors';
 import { Request, Response } from "express";
 import { initLokiDB } from './utils/lokidb';
@@ -16,12 +17,18 @@ app.get("/", async (req: Request, res: Response) => {
   });
 });
 
+app.get('/demo-vba', async (req: Request, res: Response) => {
+  const id = new Types.ObjectId();
+  res.status(200).send(id)
+})
+
 app.get('/webhook', async (req: Request, res: Response) => {
   const data = db.getCollection('events');
   return res.status(200).send(data);
 });
 
 app.post("/webhook", async (req: Request, res: Response) => {
+  console.log({ headers: req.headers});
   try {
     const eventCollection = db.getCollection('events');
     eventCollection.insert(req.body);

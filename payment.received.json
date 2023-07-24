@@ -1,0 +1,48 @@
+{
+  "id": "012345678901250-anc_et",
+  "type": "payment.received",
+  "attributes": {
+    "createdAt": "2023-06-23T16:35:13",
+    "payment": {
+      "paymentId": "00000815026526-anc_py",
+      "type": "BankTransfer",
+      "paymentReference": "null",
+      "currency": "NGN",
+      "amount": 110000,
+      "fee": 0,
+      "createdAt": "2023-02-03T17:27:44",
+      "paidAt": "2023-02-03T17:27:44",
+      "narration": "FROM UBA/ JOHN DOE/ANC JANE DOE /2232232/IO/0000040000034343526907042325",
+      "counterParty": {
+        "accountNumber": "20000223556",
+        "accountName": "JOHN DOE",
+        "bank": {
+          "name": "UNITED BANK FOR AFRICA"
+        }
+      },
+      "virtualNuban": {
+        "accountNumber": "91232334343",
+        "accountId": "000034286919554-anc_va",
+        "accountName": "ANC(JOHN DOE PLACE)"
+      },
+      "settlementAccount": {
+        "accountId": "000460455970-anc_acc",
+        "accountName": null,
+        "accountNumber": null,
+        "currency": null,
+        "type": null,
+        "status": null,
+        "bank": null,
+        "customer": null,
+        "createdAt": null,
+        "metadata": null,
+        "bankName": null,
+        "virtualNubans": null,
+        "frozen": false,
+        "freezeReason": null,
+        "freezeDescription": null,
+        "subAccounts": null
+      }
+    }
+  }
+}
